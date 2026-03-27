@@ -48,7 +48,6 @@ The main dataset includes multi camera traffic video, image frames, text queries
 
 ---
 **Dataset Access:** [SharePoint Repository](https://panthers-my.sharepoint.com/:f:/g/personal/xion2268_uwm_edu/IgAGl56s5IHnRJKlmstSMrnHAQ96hCybPLNlE8zOQU4WyI4?e=hvahhL)
-## Proposed repository structure
 
 ```text
 project-dataset/

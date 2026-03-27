@@ -62,28 +62,11 @@ The RoadSight AI dataset and related project files are hosted on SharePoint and 
 Access may be restricted to authorized collaborators depending on project permissions and data sharing policies.
 
 ---
-
+The dataset follows a simple structure consisting of traffic video files and their corresponding annotation files. The current demo release includes one sample video clip and one corrected XML annotation file, and this structure will be expanded with additional clips, labels, and metadata in later stages of the project.
 ## Repository Structure
-
-```text
-roadsight-ai/
-├─ README.md
-├─ LICENSE
-├─ CITATION.cff
-├─ metadata/
-│  ├─ camera_list.csv
-│  ├─ dataset_manifest.csv
-│  ├─ checksums.sha256
-│  └─ label_schema.json
-├─ annotations/
-│  ├─ sample_annotations.csv
-│  └─ format_description.md
-├─ samples/
-│  ├─ sample_images/
-│  └─ sample_clips/
-├─ scripts/
-│  ├─ download_dataset.py
-│  ├─ verify_checksums.py
-│  └─ extract_frames.py
-└─ docs/
-   └─ usage_and_release_notes.md
+dataset/
+├─ video/
+│  └─ 5m_demo.mp4
+├─ annotation/
+│  └─ corrected_gt_5m_demo.xml
+└─ README.md

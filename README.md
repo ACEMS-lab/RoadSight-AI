@@ -1,56 +1,72 @@
 # RoadSight AI
 
-RoadSight AI is a multimodal edge AI framework for real time traffic video search, incident detection, and cross camera situational awareness in intelligent transportation systems. The project transforms roadway camera networks into searchable, incident aware operational infrastructure by integrating three tightly coupled capabilities:
+**RoadSight AI** is a multimodal edge AI framework for real time traffic video search, incident detection, and cross camera situational awareness in intelligent transportation systems. The project is designed to help traffic agencies transform existing roadway camera networks into searchable, intelligent, and operationally useful infrastructure for faster incident awareness and response.
 
-1. **Search**  
-   Natural language retrieval over live or archived traffic video streams.
+The system integrates three tightly coupled capabilities:
 
-2. **Detection**  
-   Motion aware identification of evolving roadway disruptions such as stopped vehicles, debris, wrong way driving, abnormal slowdowns, and emerging congestion.
+- **Search**  
+  Natural language retrieval of relevant live or archived traffic video.
 
-3. **Tracing**  
-   Cross camera association of vehicles, queues, and incidents to preserve event continuity and generate multi camera timelines.
+- **Detection**  
+  Motion aware identification of roadway disruptions such as stopped vehicles, wrong way driving, debris, abnormal slowdowns, and emerging congestion.
 
-The system is designed as a cloud to edge workflow using NVIDIA enabled model development, optimization, and deployment pathways, with the goal of reducing operator burden, accelerating incident discovery, and improving traffic safety monitoring. :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4}
-
----
-
-## Why this project matters
-
-Traffic agencies operate large camera networks, but incident detection and verification are still largely manual and reactive. Existing traffic monitoring tools often rely on fixed event logic, manual CCTV review, and limited cross camera continuity. RoadSight AI addresses this gap by adding a software intelligence layer to existing roadway camera infrastructure, enabling operators to search, detect, and trace traffic events more efficiently without requiring large scale hardware replacement. :contentReference[oaicite:5]{index=5}
+- **Tracing**  
+  Cross camera continuity of vehicles, queues, and incidents to support network level situational awareness.
 
 ---
 
-## Core innovation
+## Project Motivation
 
-RoadSight AI introduces a unified framework that combines:
+Traffic agencies operate extensive roadway camera networks, yet incident detection and verification often remain manual and reactive. This delays awareness of crashes, debris, wrong way driving, stopped vehicles, and congestion forming across adjacent locations. RoadSight AI addresses this gap by introducing a unified multimodal edge AI framework that enables operators to search traffic video, detect evolving events, and trace incidents across cameras in real time.
 
-- **Semantic video search** for static and operator defined events using natural language queries
-- **Motion based incident understanding** for dynamic behaviors and emerging disruptions
-- **Cross camera tracing** for continuous spatiotemporal understanding across adjacent views
-
-This combination moves traffic operations from passive monitoring to proactive, searchable, incident aware intelligence. :contentReference[oaicite:6]{index=6}
+This project is intended to support safer, faster, and more scalable traffic operations without requiring full replacement of existing camera infrastructure.
 
 ---
 
-## Repository scope
+## Core Innovation
 
-This repository is intended to host the project codebase, metadata definitions, sample annotations, dataset utilities, and release documentation for permitted components of RoadSight AI. Depending on data sharing permissions, this repository may include:
+RoadSight AI advances the current state of practice by combining three functions in a single operational framework:
 
-- released code for perception, retrieval, and evaluation
-- selected sample clips or images
-- processed outputs such as trajectories or event labels
-- metadata and label schema definitions
-- scripts for download, verification, preprocessing, and frame extraction
-- documentation for dataset usage and release notes
+1. **Semantic Search**  
+   Retrieves relevant traffic video using natural language queries over live or archived streams.
 
-The main dataset includes multi camera traffic video, image frames, text queries, event labels, object tracks, and scene metadata. The project plan indicates a combination of in house traffic camera data and selected open source traffic video datasets, with any shared subset to be de identified where required. :contentReference[oaicite:7]{index=7}
+2. **Incident Detection**  
+   Uses motion aware analysis to identify evolving disruptions and operationally relevant events.
+
+3. **Cross Camera Tracing**  
+   Maintains continuity of vehicles, queues, and incidents across adjacent camera views.
+
+Together, these capabilities move traffic monitoring from passive viewing to active, searchable, and context aware operational intelligence.
 
 ---
-**Dataset Access:** [SharePoint Repository](https://panthers-my.sharepoint.com/:f:/g/personal/xion2268_uwm_edu/IgAGl56s5IHnRJKlmstSMrnHAQ96hCybPLNlE8zOQU4WyI4?e=hvahhL)
+
+## Key Features
+
+- Real time and archived traffic video search
+- Natural language query interface for traffic operators
+- Motion based roadway event detection
+- Cross camera object and incident continuity
+- Multimodal cloud to edge AI workflow
+- Support for intelligent transportation system monitoring and situational awareness
+- Dataset organization for metadata, annotations, samples, and release documentation
+
+---
+
+## Dataset Access
+
+The RoadSight AI dataset and related project files are hosted on SharePoint and can be accessed here:
+
+**Dataset repository:**  
+[RoadSight AI Dataset on SharePoint](https://panthers-my.sharepoint.com/:f:/g/personal/xion2268_uwm_edu/IgAGl56s5IHnRJKlmstSMrnHAQ96hCybPLNlE8zOQU4WyI4?e=hvahhL)
+
+Access may be restricted to authorized collaborators depending on project permissions and data sharing policies.
+
+---
+
+## Repository Structure
 
 ```text
-project-dataset/
+roadsight-ai/
 ├─ README.md
 ├─ LICENSE
 ├─ CITATION.cff
